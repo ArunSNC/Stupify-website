@@ -7,6 +7,8 @@ import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
+import { OpensourceComponent } from './opensource/opensource.component';
 
 @NgModule({
     imports: [
@@ -21,7 +23,9 @@ import { ProductsComponent } from './products/products.component';
         LandingComponent,
         SignupComponent,
         ProfileComponent,
-        ProductsComponent
+        ProductsComponent,
+        ServicesComponent,
+        OpensourceComponent
     ]
 })
 export class ExamplesModule { }

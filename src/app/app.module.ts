@@ -12,8 +12,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
-import { OpensourceComponent } from './opensource/opensource.component';
-import { ServicesComponent } from './services/services.component';
 
 
 @NgModule({
@@ -21,8 +19,6 @@ import { ServicesComponent } from './services/services.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    OpensourceComponent,
-    ServicesComponent
   ],
   imports: [
     BrowserModule,
