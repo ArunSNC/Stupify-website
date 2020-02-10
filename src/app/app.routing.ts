@@ -1,3 +1,6 @@
+import { OpensourceComponent } from './examples/opensource/opensource.component';
+import { ServicesComponent } from './examples/services/services.component';
+import { ProductsComponent } from './examples/products/products.component';
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
@@ -15,7 +18,10 @@ const routes: Routes =[
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    { path: 'products',         component: ProductsComponent },
+    { path: 'services',         component: ServicesComponent },
+    { path: 'opensource',       component: OpensourceComponent }
 ];
 
 @NgModule({

@@ -1,3 +1,4 @@
+// import { NavbarComponent } from './../shared/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -6,20 +7,30 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
+import { OpensourceComponent } from './opensource/opensource.component';
+import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        NgbModule,
+        NgbModule
     ],
     exports: [
-        LandingComponent
+        LandingComponent,
+        OpensourceComponent,
+        ProductsComponent,
+        ServicesComponent
     ],
     declarations: [
         LandingComponent,
         SignupComponent,
-        ProfileComponent
+        ProfileComponent,
+        OpensourceComponent,
+        ProductsComponent,
+        ServicesComponent,
+        // NavbarComponent
     ]
 })
 export class ExamplesModule { }

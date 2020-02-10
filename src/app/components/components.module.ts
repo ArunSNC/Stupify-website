@@ -1,5 +1,7 @@
+// import { ServicesComponent } from './../examples/services/services.component';
+// import { OpensourceComponent } from './../examples/opensource/opensource.component';
 import { ExamplesModule } from './../examples/examples.module';
-import { LandingComponent } from './../examples/landing/landing.component';
+// import { LandingComponent } from './../examples/landing/landing.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,6 +18,7 @@ import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
+// import { ProductsComponent } from 'app/examples/products/products.component';
 
 @NgModule({
     imports: [
@@ -36,6 +39,10 @@ import { NgbdModalContent } from './modal/modal.component';
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
+        // LandingComponent,
+        // OpensourceComponent,
+        // ProductsComponent,
+        // ServicesComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

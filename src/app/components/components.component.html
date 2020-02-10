@@ -21,7 +21,7 @@
 
     <div class="section section-dark section-nucleo-icons">
         <div class="container">
-            <div class="row" >
+            <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <h2 class="title">Stupify IoT Core</h2><br />
                     <p class="description">
@@ -29,7 +29,7 @@
                         you to aggregate, visualize, and analyze live data streams in the cloud. You can send data to
                         Cloud from your devices, create instant visualization of live data, and send alerts.
                     </p><br />
-                    <a class="btn btn-outline-danger btn-round">Learn More</a>
+                    <a class="btn btn-outline-danger btn-round" [routerLink]="['/opensource']">Learn More</a>
                 </div>
 
                 <div class="col-lg-6 col-md-12" id="products">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <br><br  id="services">
+            <br><br id="services">
             <br><br>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -55,7 +55,7 @@
                         you to aggregate, visualize, and analyze live data streams in the cloud. You can send data to
                         Cloud from your devices, create instant visualization of live data, and send alerts.
                     </p><br />
-                    <a class="btn btn-outline-danger btn-round">Learn more</a>
+                    <a class="btn btn-outline-danger btn-round" [routerLink]="['/products']">Learn more</a>
                 </div>
             </div>
             <br><br>
@@ -68,7 +68,7 @@
                         you to aggregate, visualize, and analyze live data streams in the cloud. You can send data to
                         Cloud from your devices, create instant visualization of live data, and send alerts.
                     </p><br />
-                    <a  class="btn btn-outline-danger btn-round">Learn more</a>
+                    <a class="btn btn-outline-danger btn-round" [routerLink]="['/services']">Learn more</a>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="icons-container pull-right">
@@ -83,33 +83,27 @@
                 <app-landing></app-landing>
             </div>
         </div>
-  
-        <div class="section">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                    </div>
+    <!-- </div> -->
+            <div class="row justify-content-md-center sharing-area text-center">
+                <div class="text-center col-md-12 col-lg-8">
+                    <h3>Thank you for supporting us!</h3>
                 </div>
-                <div class="row justify-content-md-center sharing-area text-center">
-                    <div class="text-center col-md-12 col-lg-8">
-                        <h3>Thank you for supporting us!</h3>
-                    </div>
-                    <div class="text-center col-md-12 col-lg-8">
-                        <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
-                            <i class="fa fa-twitter"></i> Twitter
-                        </a>
-                        <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip" title="Share!">
-                            <i class="fa fa-google-plus"></i> Google
-                        </a>
-                        <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
-                            <i class="fa fa-facebook-square"></i> Facebook
-                        </a>
-                        <a href="#" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
-                            <i class="fa fa-github"></i> Star
-                        </a>
-                    </div>
+                <div class="text-center col-md-12 col-lg-8">
+                    <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
+                        <i class="fa fa-twitter"></i> Twitter
+                    </a>
+                    <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip" title="Share!">
+                        <i class="fa fa-google-plus"></i> Google
+                    </a>
+                    <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip"
+                        title="Share!">
+                        <i class="fa fa-facebook-square"></i> Facebook
+                    </a>
+                    <a href="#" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip"
+                        title="Star on Github">
+                        <i class="fa fa-github"></i> Star
+                    </a>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
-        <!-- </div> -->
