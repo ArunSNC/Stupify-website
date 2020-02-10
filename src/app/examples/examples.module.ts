@@ -6,9 +6,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
+import { OpensourceComponent } from './opensource/opensource.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
-import { OpensourceComponent } from './opensource/opensource.component';
 
 @NgModule({
     imports: [
@@ -17,15 +17,18 @@ import { OpensourceComponent } from './opensource/opensource.component';
         NgbModule,
     ],
     exports: [
-        LandingComponent
+        LandingComponent,
+        OpensourceComponent,
+        ProductsComponent,
+        ServicesComponent
     ],
     declarations: [
         LandingComponent,
         SignupComponent,
         ProfileComponent,
+        OpensourceComponent,
         ProductsComponent,
-        ServicesComponent,
-        OpensourceComponent
+        ServicesComponent
     ]
 })
 export class ExamplesModule { }
