@@ -1,3 +1,4 @@
+// import { NavbarComponent } from './../shared/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,7 @@ import { ServicesComponent } from './services/services.component';
     imports: [
         CommonModule,
         FormsModule,
-        NgbModule,
+        NgbModule
     ],
     exports: [
         LandingComponent,
@@ -28,7 +29,8 @@ import { ServicesComponent } from './services/services.component';
         ProfileComponent,
         OpensourceComponent,
         ProductsComponent,
-        ServicesComponent
+        ServicesComponent,
+        // NavbarComponent
     ]
 })
 export class ExamplesModule { }
