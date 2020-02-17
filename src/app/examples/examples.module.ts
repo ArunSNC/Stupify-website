@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { OpensourceComponent } from './opensource/opensource.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
     imports: [
@@ -21,7 +22,8 @@ import { ServicesComponent } from './services/services.component';
         LandingComponent,
         OpensourceComponent,
         ProductsComponent,
-        ServicesComponent
+        ServicesComponent,
+        CarouselComponent
     ],
     declarations: [
         LandingComponent,
@@ -30,6 +32,7 @@ import { ServicesComponent } from './services/services.component';
         OpensourceComponent,
         ProductsComponent,
         ServicesComponent,
+        CarouselComponent,
         // NavbarComponent
     ]
 })

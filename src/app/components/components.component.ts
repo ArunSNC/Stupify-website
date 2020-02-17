@@ -4,19 +4,16 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 @Component({
     selector: 'app-components',
     templateUrl: './components.component.html',
-    styles: [`
-    ngb-progressbar {
-        margin-top: 5rem;
-    }
-    `]
+    styleUrls: ['./components.component.css']
 })
 
 export class ComponentsComponent implements OnInit {
     page = 4;
     page1 = 5;
-    focus;
-    focus1;
-    focus2;
+    focus: any;
+    focus1: any;
+    focus2: any;
+    active: boolean = true;
     date: { year: number, month: number };
     model: NgbDateStruct;
     constructor(private renderer: Renderer) { }
@@ -30,16 +27,40 @@ export class ComponentsComponent implements OnInit {
     }
 
     ngOnInit() {
-        let input_group_focus = document.getElementsByClassName('form-control');
-        let input_group = document.getElementsByClassName('input-group');
-        for (let i = 0; i < input_group.length; i++) {
-            input_group[i].children[0].addEventListener('focus', function () {
-                input_group[i].classList.add('input-group-focus');
-            });
-            input_group[i].children[0].addEventListener('blur', function () {
-                input_group[i].classList.remove('input-group-focus');
-            });
-        }
+        this.Activate();
     }
-
+    count = 0;
+    turn = 0;
+    data: String;
+    flg_1: boolean;
+    flg_2: boolean;
+    list = ['Opensource', 'Automation', 'Products'];
+    public Activate(): void {
+        if (this.turn === this.list.length) {
+            this.turn = 0;
+        }
+        this.data = this.list[this.turn];
+        if (this.count % 2 === 1) {
+            this.active = false;
+            this.count = this.count + 1;
+            this.flg_1 = true;
+            setTimeout(() => {
+                this.Activate();
+            }, 5000);
+        }
+        else if (this.count % 2 === 0) {
+            this.active = true;
+            this.count = this.count + 1;
+            this.flg_2 = true;
+            setTimeout(() => {
+                this.Activate();
+            }, 5000);
+        }
+        if (this.flg_1 && this.flg_2) {
+            this.turn = this.turn + 1;
+            this.flg_1 = false;
+            this.flg_2 = false;
+        }
+        console.log(this.count);
+    }
 }
