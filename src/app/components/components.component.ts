@@ -34,7 +34,7 @@ export class ComponentsComponent implements OnInit {
     data: String;
     flg_1: boolean;
     flg_2: boolean;
-    list = ['Opensource', 'Automation', 'Products'];
+    list = ['Opensource', 'Automation', 'Products','Services'];
     public Activate(): void {
         if (this.turn === this.list.length) {
             this.turn = 0;
